@@ -1,0 +1,314 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 70vh;
+  min-height: 350px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay h1,
+.hero-overlay p {
+  color: #fff;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+.custom-icon {
+  font-size: 100px;
+  /* icon ka size bada kar diya */
+  color: #007bff;
+  /* optional color */
+}
+
+/* Footer background image handled inline via footer-bg */
+
+.footer-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff9800;
+  /* Hover color for links */
+}
+
+.footer-btn {
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #ffc107 !important;
+  /* Change button color on hover */
+  color: #000 !important;
+  /* Button text color change */
+  transform: translateY(-2px);
+  /* Slight lift effect */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* ya Roboto / Montserrat */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  /* headings ko stylish */
+}
+
+p,
+a,
+li,
+span {
+  font-family: 'Poppins', sans-serif;
+  /* body text clean */
+}
+
+/* CARDS */
+.car-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  /* Ensure all cards have same height */
+  display: flex;
+  flex-direction: column;
+}
+
+.car-card img {
+  height: 200px;
+  /* Fixed image height */
+  width: 100%;
+  object-fit: cover;
+}
+
+.car-card .card-body {
+  flex: 1;
+  /* Makes card body take remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Buttons stick to bottom */
+}
+
+.car-card .card-text {
+  /* Limit text to 2 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Video */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* BRAND LOGOS */
+.brand-logos img {
+  width: 90px;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.brand-box {
+  background: #f8f9fa;
+  padding: 25px 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.brand-box p {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hover effect (loop jaisa feel) */
+.brand-box:hover {
+  transform: translateY(-8px);
+}
+
+.brand-box:hover img {
+  transform: scale(1.15) rotate(3deg);
+}
+  /* CONTACT HERO */
+.contact-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("assets/img/contact-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+}
+
+/* CONTACT BOX */
+.contact-box {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.contact-box i {
+  font-size: 30px;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.contact-box:hover {
+  transform: translateY(-8px);
+}
+
+/* MAP */
+.map-section iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+.contact-hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("assets/img/hero-section.jpg") center/cover no-repeat;
+
+  color: #fff;
+}
+
+.car-detail {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.car-detail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.car-detail img:hover {
+  transform: scale(1.05);
+}
+
+.car-detail h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.car-detail ul li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.car-detail p {
+  line-height: 1.7;
+  color: #555;
+}
+
+.car-detail .btn-primary {
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
